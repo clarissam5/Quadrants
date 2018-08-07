@@ -51,10 +51,10 @@ public class Point {
 		
 		}
 		
-		public String Distance(Point another) {
+		public double Distance(Point another) {
 			double dist;
 			dist = Math.sqrt(Math.pow((this.x - another.x), 2) + Math.pow((this.x - another.x), 2));
-			return "The distance between " + this.getX() + ","+ this.getY() + "" + another + dist;
+			return  dist;
 		}
 		
 		public void Shift() {
@@ -63,6 +63,6 @@ public class Point {
 		}
 	
 		public String toString() {
-			return ("The value of this point: " + this.x + this.y);
+			return ("The new value of this point is: " + "(" + this.x +","+ this.y + ")");
 		}
 }

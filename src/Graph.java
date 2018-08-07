@@ -9,10 +9,10 @@ public class Graph {
 		
 		System.out.println();
 		System.out.println(point1.Quadrant());
-		System.out.println(point1.Distance(point2));
+		System.out.println("The distance between point1 and point 2 is: " + point1.Distance(point2));
 		point1.Shift();
 		point2.Shift();
-		System.out.println(point1.getX() + ","+ point1.getY());
+		System.out.println("The new position for point1 is " + "(" + point1.getX() + ","+ point1.getY() + ")");
 		System.out.println(point2.toString());
 	
 	}
