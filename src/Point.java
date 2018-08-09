@@ -30,24 +30,23 @@ public class Point {
 		
 		//Instance Methods
 		
-		public String Quadrant() {
-			String quad;
+		public int Quadrant() {
+			//have to equal it to 0 because it is a local variable 
+			int quad=0;
 			if (x > 0 && y >  0) {
-				quad = "is in quadrant 1";
+				quad = 1;
 			}
 			else if (x < 0 && y >  0){
-				quad = "is in quadrant 2";
+				quad = 2;
 			}
 			else if (x < 0 && y <  0) {
-				quad = "is in quadrant 3";
+				quad = 3;
 			}
 			else if (x > 0 && y <  0) {
-			quad = "is in quadrant 4";
+			quad = 4;
 			}
-			else {
-				quad = "This is the origin.";
-			}
-			return "(" + (x) +"," + (y) + ")" + " : " + quad;
+			
+			return quad;
 		
 		}
 		
@@ -58,11 +57,15 @@ public class Point {
 		}
 		
 		public void Shift() {
-			this.x = ++this.x;
-			this.y = ++this.y;
+			++this.x;
+			++this.y;
+		}
+
+		@Override
+		public String toString() {
+			return "Point [x=" + x + ", y=" + y + "]";
 		}
 	
-		public String toString() {
-			return ("The new value of this point is: " + "(" + this.x +","+ this.y + ")");
-		}
+		
+		
 }

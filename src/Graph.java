@@ -7,7 +7,6 @@ public class Graph {
 		Point point3 = new Point(-2, -3);
 		Point point4 = new Point(2, -3);
 		
-		System.out.println();
 		System.out.println(point1.Quadrant());
 		System.out.println("The distance between point1 and point 2 is: " + point1.Distance(point2));
 		point1.Shift();
